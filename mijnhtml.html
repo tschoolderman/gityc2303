@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="mijnfunctie.js"></script>
+    <link rel="stylesheet" href="mijnstyle.css">
+
+    <script>
+        function hierTeBeginnen() {
+            //alert("hier iets wil laten zien");
+            // console.log("iets anders laten zien");
+            // var mijnvar1 = '24';
+            // console.log(mijnvar1 + 44);
+
+            // console.log(mijnvar1 === 24);
+            // var mijnvar2 = 5;
+            // console.log(mijnvar1 == 22 || mijnvar2 == 55)
+            // console.log(mijnvar1 < mijnvar2);
+            // console.log(!(mijnvar1 == 24 && mijnvar2 == 5))
+            // console.log(24 / 9);
+            // var mijnvar3 = 12;
+            // mijnvar3++;
+            // mijnvar3 = mijnvar3 + 14;
+            // mijnvar3 += 14;
+            // console.log(mijnvar3);
+            // mijnvar2 == 5 ? console.log("go") : console.log("no");
+            // //                      1010 
+            // //                      0111    
+            // var hoi = 10 | 7;
+            // console.log(hoi);
+
+
+
+            // arithmic operators    OPERAND
+            // + - * /   %   **   //
+            // assigment operator
+            // =  ++ --  += -= 
+            // comparative operator  >>   boolean
+            // ==   ===   !=   <   >  <=    >=  
+            // logische operator    >>  operanden moeten een boolean
+            //  ||        or of    beide kanten true zijn            pipe
+            //  &&     and 
+            //  ^   xor als alleen 1 van de 2 waar is
+            // ! flipt het resultaat
+
+            //de DOM Document Object Model (OOP)
+            // html pagina noemt zichzelf document
+            // javascript kan dit DOM lezen
+            var voornaam = document.getElementById("invoer").value;
+
+            if (voornaam == "thomas") {
+                alert('dat is VIP thomas');
+            } else {
+                alert('dit is een normaal kaartje');
+            }
+            document.getElementById("uitvoer").innerHTML = "welkom " + voornaam;
+            for (var x = 0; x < 3; x += 1) {
+                alert('dit is een nieuwe rondje' + x);
+            }
+        }
+        // operator
+    </script>
+</head>
+
+<body>
+    <input id="invoer">
+    <input type="button" value="Klik hier" onclick="hierTeBeginnen()">
+    <div id="uitvoer"></div>
+</body>
+
+</html>
+
+
+
+<!-- {    curly bracket  squickly bracket accolade
+;    punt komma semicolon
+<    kleiner dan    winkelhaak tag-openen
+~    squickly line   tilde 
+[    square brackets blokhaken
+(     parenthesis
+_    underscore
+/    forwardslash slash
+\    backslash
+#    hashtag  hekje
+`    backtick      "hoi ik ben "+ voornaam + " en ben "+ leeftijd+ "oud"
+                    `hoi ik ben ${voornaam} en ben ${leeftijd} oud`
+                    <a href="nos.nl">klik 'hier'</a>
+'    aanhalingsteken single quote
+"    dubbele aanhalingsteken
+-    dash
+|    pipe
+?!
+^   dakje accent circonflex
+%   procent teken
+*  sterretje asterisk -->
