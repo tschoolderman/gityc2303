@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //1 wat is mijn doelstelling  ||  opknippen??
+        //2 hoe kan ik dat realiseren
+        //3 coderen
+        var countA = 0;
+        var countB = 0;
+        var countC = 0;
+        var countD = 0;
+
+        function hierTeBeginnen(deletter) {
+            document.getElementById("uitvoer").innerHTML += "Er is op knop " + deletter + " geklikt.<br>";
+            if (deletter == "A") {
+                countA += 1;
+                if (countA >= 2) {
+                    alert(`U heeft al ${countA} keer op knop A gedrukt.`);
+                }
+            }
+            if (deletter == "B") {
+                countB += 1;
+                if (countB >= 2) {
+                    alert(`U heeft al ${countB} keer op knop B gedrukt.`);
+                }
+            }
+            if (deletter == "C") {
+                countC += 1;
+                if (countC >= 2) {
+                    alert(`U heeft al ${countC} keer op knop C gedrukt.`);
+                }
+            }
+            if (deletter == "D") {
+                countD += 1;
+                if (countD >= 2) {
+                    alert(`U heeft al ${countD} keer op knop D gedrukt.`);
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="button" value="A" onclick="hierTeBeginnen('A')">
+    <input type="button" value="B" onclick="hierTeBeginnen('B')">
+    <input type="button" value="C" onclick="hierTeBeginnen('C')">
+    <input type="button" value="D" onclick="hierTeBeginnen('D')">
+    <div id="uitvoer"></div>
+</body>
+
+</html>
