@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function vriendelijkeGroet() {
+            // console.log("it works");
+            let userInput = document.getElementById("input").value;
+
+            // if (userInput == "hallo") {
+            //     alert("Welkom");
+            // }
+            // if (userInput == "doei") {
+            //     alert("Tot de volgende keer");
+            // }
+            // let text = "Hello World";
+            // let char = text.charAt(0);
+            // console.log(char);
+            // let result = text.includes("e");
+            // console.log(result);
+
+            // for (var i = 0; i < userInput; i++) {
+            //     var letter = userInput.charAt(i);
+            //     console.log(letter);
+            // }
+            if (userInput.includes("e")) {
+                alert("Er zit een 'e' in het woord");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <input id="input">
+    <input type="button" value="Klik hier" onclick="vriendelijkeGroet()">
+    <div id="uitvoer"></div>
+</body>
+
+</html>

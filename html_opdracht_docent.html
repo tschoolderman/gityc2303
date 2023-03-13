@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="mijnscript.js"></script>
+    <link rel="stylesheet" href="mijnstyle.css">
+
+    <script>
+        //1 wat is mijn doelstelling  ||  opknippen??
+        //2 hoe kan ik dat realiseren
+        //3 coderen
+        function hierTeBeginnen() {
+            var hetwoord = document.getElementById("invoer").value;
+            var x = 0;
+            var tot = hetwoord.length;
+            while (x < tot) {
+                var deletter = hetwoord.charAt(x);
+                console.log(deletter);
+                if (deletter == "e") {
+                    alert("er zit een e in!");
+                }
+                x++;
+            }
+            for (var i = 0; i < hetwoord.length; i++) {
+                var deletter2 = hetwoord.charAt(i);
+                console.log(deletter2);
+            }
+            if (hetwoord.includes("e")) {
+                alert("ER ZIT EEN E IN")
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <input id="invoer">
+    <input type="button" value="Klik hier" onclick="hierTeBeginnen()">
+    <div id="uitvoer"></div>
+</body>
+
+</html>

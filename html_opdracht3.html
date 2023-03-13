@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //1 wat is mijn doelstelling  ||  opknippen??
+        //2 hoe kan ik dat realiseren
+        //3 coderen
+        function hierTeBeginnen() {
+            var hetwoord = document.getElementById("invoer").value;
+            var gekozenLetter = document.getElementById("invoer2").value;
+            var x = 0;
+            var tot = hetwoord.length;
+            var count = 0;
+            while (x < tot) {
+                var deletter = hetwoord.charAt(x);
+                if (deletter == gekozenLetter) {
+                    count += 1;
+                }
+                x++;
+            }
+            alert(count);
+            document.getElementById("uitvoer").innerHTML = `De letter '${gekozenLetter}' komt <b>${count}</b>  keer voor in '${hetwoord}'`;
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <input id="invoer">
+    <input type="button" value="Klik hier" onclick="hierTeBeginnen()">
+    <input id="invoer2">
+    <div id="uitvoer"></div>
+</body>
+
+</html>
